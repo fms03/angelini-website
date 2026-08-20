@@ -348,6 +348,23 @@ body {
     transition: all 0.3s ease;
 }
 
+.coauthors-list {
+    font-size: 1rem;
+    color: var(--acero);
+}
+
+.coauthors-list a {
+    color: var(--prusia);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.coauthors-list a:hover {
+    color: var(--acero);
+    text-decoration: underline;
+}
+
 /* ========================================================= */
 /* --- AJUSTES PARA CELULARES (MEDIA QUERY) --- */
 /* ========================================================= */

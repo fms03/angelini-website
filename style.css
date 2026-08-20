@@ -1,0 +1,167 @@
+/* Variables de la Paleta Prusia Académico */
+:root {
+    --prusia: #003153;
+    --acero: #4682B4;
+    --antracita: #212529;
+    --nieve: #F8F9FA;
+    --blanco: #FFFFFF;
+    
+    --fuente-titulos: 'Crimson Text', serif;
+    --fuente-textos: 'Inter', sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    background-color: var(--nieve);
+    color: var(--antracita);
+    line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: var(--prusia);
+    color: var(--blanco);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a, .lang-switch a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .lang-switch a:hover {
+    color: var(--acero);
+}
+
+/* Sección Hero */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 10%;
+    min-height: 80vh;
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+    font-family: var(--fuente-titulos);
+    font-size: 3.5rem;
+    color: var(--prusia);
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--acero);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--prusia);
+    color: var(--blanco);
+}
+
+.btn-primary:hover {
+    background-color: var(--acero);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--prusia);
+    border: 1px solid var(--prusia);
+}
+
+.btn-secondary:hover {
+    background-color: var(--nieve);
+}
+
+/* Placeholder de la Imagen */
+.hero-image-placeholder {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.placeholder-box {
+    width: 400px;
+    height: 500px;
+    background-color: #e9ecef;
+    border: 2px dashed #ced4da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-family: var(--fuente-textos);
+    border-radius: 8px;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 4rem 5%;
+    }
+    
+    .nav-links {
+        display: none; /* Aquí luego iría un menú hamburguesa */
+    }
+    
+    .hero-image-placeholder {
+        justify-content: center;
+    }
+}

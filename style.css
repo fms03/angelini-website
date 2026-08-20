@@ -270,3 +270,59 @@ body {
         margin-bottom: 0.5rem;
     }
 }
+
+/* Estilos para Footer y Contacto */
+.footer-section {
+    background-color: var(--prusia);
+    color: var(--blanco);
+    text-align: center;
+    padding: 5rem 10% 2rem;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.footer-title {
+    font-family: var(--fuente-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--blanco);
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: var(--nieve);
+}
+
+/* Botón de contacto invertido */
+.contact-btn {
+    background-color: var(--blanco);
+    color: var(--prusia);
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border: 2px solid var(--blanco);
+}
+
+.contact-btn:hover {
+    background-color: var(--acero);
+    color: var(--blanco);
+    border-color: var(--acero);
+}
+
+/* Línea final y créditos */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.developer-credit {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}

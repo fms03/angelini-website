@@ -165,3 +165,61 @@ body {
         justify-content: center;
     }
 }
+
+/* Estilos para Secciones de Contenido */
+.content-section {
+    padding: 5rem 10%;
+    background-color: var(--blanco);
+}
+
+.section-title {
+    font-family: var(--fuente-titulos);
+    font-size: 2.5rem;
+    color: var(--prusia);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--nieve);
+    padding-bottom: 0.5rem;
+}
+
+.subsection-title {
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    color: var(--antracita);
+    margin: 2rem 0 1rem 0;
+}
+
+/* Lista de Publicaciones Académicas */
+.publication-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.publication-list li {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--acero);
+}
+
+.publication-list strong {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.publication-list em {
+    color: #555;
+}
+
+.doi-link {
+    display: inline-block;
+    margin-top: 0.3rem;
+    color: var(--acero);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.doi-link:hover {
+    color: var(--prusia);
+    text-decoration: underline;
+}

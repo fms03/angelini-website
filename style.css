@@ -223,3 +223,50 @@ body {
     color: var(--prusia);
     text-decoration: underline;
 }
+
+/* Estilos para Educación y Experiencia */
+.resume-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.resume-item:last-child {
+    border-bottom: none;
+}
+
+.resume-date {
+    flex: 0 0 200px; /* Ancho fijo para la columna de fechas */
+    font-family: var(--fuente-textos);
+    font-weight: 500;
+    color: var(--prusia);
+    font-size: 0.95rem;
+    padding-top: 0.2rem;
+}
+
+.resume-content {
+    flex: 1;
+    min-width: 300px; /* Asegura que no se colapse en pantallas pequeñas */
+}
+
+.resume-content h4 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.3rem;
+    color: var(--antracita);
+    margin-bottom: 0.3rem;
+}
+
+.resume-content p {
+    margin-bottom: 0.3rem;
+    color: #444;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .resume-date {
+        flex: 0 0 100%;
+        margin-bottom: 0.5rem;
+    }
+}

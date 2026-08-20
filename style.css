@@ -140,17 +140,18 @@ body {
     justify-content: flex-end;
 }
 
-.placeholder-box {
-    width: 400px;
-    height: 500px;
-    background-color: #e9ecef;
-    border: 2px dashed #ced4da;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #6c757d;
-    font-family: var(--fuente-textos);
-    border-radius: 8px;
+/* Estilo de la Fotografía de Perfil */
+.profile-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 49, 83, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: translateY(-5px);
 }
 
 /* Estilos para Secciones de Contenido */
